@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Noticias - Técnica N°5</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <img src="images/LOGO2.webp" alt="Logo de la Escuela" class="school-logo">
+            <h1>E.E.S.T N°5 "Dr. Manuel Sadosky"</h1>
+        </div>
+    </header>
+
+    <main class="container">
+       <!-- Dentro de <main class="container"> -->
+<h2>Añadir Noticias</h2>
+
+<form id="form-noticia" class="news-form">
+    <div class="form-left">
+        <div class="form-group">
+            <label for="titulo">Título *</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Escribí el título acá..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="subtitulo">Subtítulo *</label>
+            <input type="text" id="subtitulo" name="subtitulo" placeholder="Escribí el subtítulo..." required>
+        </div>
+
+        <div class="form-group inline-group">
+            <label for="fecha">Fecha *</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+            <label>Añadir Comunicado *</label>
+            <div id="editor-container"></div>
+            <input type="hidden" id="comunicado" name="comunicado" required>
+        </div>
+    </div>
+
+    <div class="form-right">
+        <div class="image-upload-box">
+            <label for="imagen" class="image-label">
+                <img src="images/LOGO2.webp" alt="Predeterminada" class="default-preview-img">
+                <span class="icon-plus">+</span>
+                <span>Añadir Imagen</span>
+                <small class="hint">(No obligatorio: se usará el logo del colegio)</small>
+            </label>
+            <input type="file" id="imagen" name="imagen" accept="image/*">
+        </div>
+
+        <button type="submit" id="btn-subir" class="btn-submit">Subir</button>
+    </div>
+</form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h3>Contacto:</h3>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5491127613366" target="_blank">1127613366</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/tecnica_n5_berazategui" target="_blank">@tecnica_n5_berazategui</a></p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/EscuelaEducacionSecundariaTecnica5Berazategui" target="_blank">@EscuelaEducacionSecundariaTecnica5Berazategui</a></p>
+            </div>
+            <div class="footer-section address">
+                <h3>Dirección:</h3>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=calle+368B+y+316+Berazategui" target="_blank">Calle 368B y 316</a></p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+<script type="module" src="noticias.js"></script>
+</body>
+</html>

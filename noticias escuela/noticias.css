@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #0056b3;
+    --bg-color: #f8f9fa;
+    --border-color: #ccc;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: #0056b3;
+    border-bottom: 2px solid var(--border-color);
+    padding: 15px 20px;
+    color: white;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* --- Main --- */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.news-form {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form-left {
+    flex: 2;
+    min-width: 300px;
+}
+
+.form-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inline-group input[type="date"] {
+    width: auto;
+    max-width: 200px;
+}
+
+/* --- Editor Quill --- */
+.ql-toolbar.ql-snow {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid var(--border-color);
+}
+
+#editor-container {
+    min-height: 250px;
+    max-height: 400px;
+    background-color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+/* --- Caja de Carga de Imagen --- */
+.image-upload-box {
+    width: 100%;
+    max-width: 320px;
+    height: 350px;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.image-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-plus {
+    font-size: 48px;
+    color: #888;
+}
+
+.hint {
+    font-size: 12px;
+    color: #666;
+}
+
+.image-upload-box input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.default-preview-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    opacity: 0.3;
+}
+
+/* --- Botón Subir --- */
+.btn-submit {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: rgb(255, 136, 0);
+    color: white;
+    border-color: rgb(255, 136, 0);
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #0056b3;
+    padding: 25px 0;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section a {
+    color: #ffca28;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
